@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Node code...
+      - pwd
+      - npm run test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - codebuild-breakpoint
+artifacts:
+  files:
+    - '**/*'
+  name: myname-$(date +%Y-%m-%d) 
