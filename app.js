@@ -5,3 +5,12 @@ console.log(true && false);
 console.log(true || false);
 console.log(!true);
 console.log("good bye from nodejs, test passed");
+
+
+
+
+// This line intentionally generates an error by trying to access a property of an undefined variable
+//console.log(undefinedVariable.property);
+
+//console.error('An error occurred');
+//process.exit(1);
