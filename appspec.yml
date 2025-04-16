@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /home/main
-    # destination: /var/www/html/
+    # destination: /home/main
+    destination: /var/www/html/
     file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
