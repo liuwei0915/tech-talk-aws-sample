@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo 1
+      - echo 2
 artifacts:
   files:
     - '**/*'
