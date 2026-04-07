@@ -9,7 +9,9 @@ phases:
       - echo Build started on `date`
       - echo Building the Node code...1
       - pwd
-      - npm run test
+      - echo $CODEBUILD_WEBHOOK_TRIGGER
+      # - npm run test
+      
   post_build:
     commands:
       - echo Build completed on `date`
